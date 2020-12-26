@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="T.P.S. - Transports Presse Services est une entreprise de transports livrant ses clients dans l'Union Européenne.
-        Reconnue pour son service de qualité et son professionnalisme, elle travaille en étroite collaboration avec des grands noms du marché, Chronospost, EOS, Fret Ile de France.">
+        Reconnue pour son service de qualité et son professionnalisme, elle travaille en étroite collaboration avec des grands noms du marché, Chronospost, EOS, Ciblex.">
             <title>T.P.S. - Transports Presse Services</title>
         <link rel="stylesheet" type="text/css" href="/styles.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
@@ -12,42 +12,41 @@
     </head>
 
     <body>
-        <section class="top-page">
-                <header class="header">
-                    <a class="logo" href="#"><img src="/images/Logo_TPS.svg" alt="logo" height="200px" width="200px"></a>
-                    <nav class="nav">
-                        <div class="container">
-                            <h1>
-                                <a class="highlight" href="#"><span>Accueil</span></a>
-                                <a class="highlight" href="#partenaires"><span>Nos partenaires</span></a>
-                                <a class="highlight" href="#fret"><span>Affretement</span></a>
-                                <a class="highlight" href="#dataclient"><span>Contact</span></a>
-                                <a class="highlight" href="#team"><span>Nos Equipes</span></a>
-                                <a class="highlight" href="#footer"><span>Mentions légales</span></a>
-                            </h1>
-                            <img class="noel" src="/images/guirlande2.png" alt="deconoel">
-                        </div>
-                    </nav>
-                </header>
+
+        <section id="home" class="home-container">
+            <header id="header" class="header">
+                <a class="logo" href="#"><img src="/images/Logo_TPS.svg" alt="logo" height="200px" width="200px"></a>
+                    <ul class="nav-links">
+                        <li><a class="highlight" href="#"><span>Accueil</span></a></li>
+                        <li><a class="highlight" href="#partenaires"><span>Nos partenaires</span></a></li>
+                        <li><a class="highlight" href="#fret"><span>Affretement</span></a></li>
+                        <li><a class="highlight" href="#team"><span>Nos Equipes</span></a></li>
+                        <li><a class="highlight" href="#question"><span>Questions</span></a></li>
+                        <li><a class="highlight" href="#dataclient"><span>Contact</span></a></li>
+                    </ul>
+                <div class="burger-container">
+                    <div class="burger"></div>
+                </div>
+            </header>
         </section>
 
         <div class="landing-page">
             <h2 class="big-title">Votre transport professionnel.</h2>
             <img class="truck" src="/images/truckmercedesorigin.webp" alt="Utilitaire">
         </div>
-        
+
         <section class="services" id="services">
             <div class="service-item">
-                <i class="fas fa-store delivery-icon"></i>
-                <h4 class="service-details">Garage à proximité</h4>
+                <i class="fas fa-phone delivery-icon"></i>
+                <h4 class="service-details">Disponible 24h/24 et 7j/7</h4>
             </div>
             <div class="service-item">
                 <i class="fas fa-people-carry delivery-icon"></i>
-                <h4 class="service-details">Service professionnel</h4>
+                <h4 class="service-details">Service de proximité</h4>
             </div>
             <div class="service-item">
                 <i class="fas fa-truck delivery-icon"></i>
-                <h4 class="service-details">Sprinter Utilitaires</h4>
+                <h4 class="service-details">Sprinters Mercedes-Benz</h4>
             </div>
         </section> 
 
@@ -62,7 +61,12 @@
                 </div>
         </section>
 
-        <section class="question">
+
+        <section class="video">
+            <iframe width="850" height="500" src="https://www.youtube.com/embed/DoOWK7ik4cY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="question" id= "question">
             <h2 class="section-title">Questions récurrentes</h2>
             <div class="listing">
                 <ul>
@@ -96,13 +100,15 @@
         <section class="fret" id="fret">
             <h2 class="section-title">Plateformes d'Affretement</h2>
             <div class="listing" id="listing">
-                <p>Présente sur toute l'Ile de France, TPS compte pas moins de 5 dispos sur les lieux de fret marchants que sont :</p>
                 <ul>
-                    <li>Le Bourget</li>
-                    <li>Chili-mazarin</li>
-                    <li>Ciblex France</li>
-                    <li>Aeroport Roissy Charles de Gaulle</li>
-                    <li>FedEx Express</li>
+                   <li> Présente sur toute l'Ile de France, TPS compte pas moins de 5 dispos sur les lieux de fret marchants que sont :</li> <br>
+                    <ul>
+                        <li>Le Bourget</li>
+                        <li>Chili-mazarin</li>
+                        <li>Ciblex France</li>
+                        <li>Aeroport Roissy Charles de Gaulle</li>
+                        <li>FedEx Express</li>
+                    </ul>
                 </ul>
             </div>
         </section>
@@ -122,10 +128,10 @@
                  </p>
             <div class="services" >
                 <div class="service-item">
-                    <img class="image" src="/images/mum.jpg" alt="cadre1"> <h5 class="services-details">Sol ROBERT, vice CEO de l'entreprise TPS</h5>  
+                    <img class="image" src="/images/mum.jpg" alt="cadre1"> <h5 class="services-details">Sol ROBERT, co-fondatrice de l'entreprise SARL TPS</h5>  
                 </div>
                 <div class="service-item">
-                    <img class="image" src="/images/brandon.jpg" alt="bg"> <h5 class="services-details" >Brandon ROBERT, développeur de génie</h5>
+                    <img class="image" src="/images/brandon.jpg" alt="bg"> <h5 class="services-details" >Brandon ROBERT, dev web de génie</h5>
                 </div>
                 <div class="service-item">
                     <img class="image" src="/images/chauffeurs.jpeg" alt="crew"> <h5 class="services-details" >L'équipe de chauffeurs-livreurs</h5>
@@ -135,46 +141,30 @@
 
         <section class="dataclient" id="dataclient">
             <h2 class="section-title">Contact</h2>
-            <form action="" autocomplete="on">
-                <div class="listing">
-                    <ul> 
-                        <li>Date de livraison : <input type="datetime-local" name="livraison"></li>
-                        <li><label for="quantity">Indiquez le volume nécessaire à votre transport : </label>
-                            <select name="quantity" id="quantity">
-                                <option value="150L"> 150L</option>
-                                <option value="200L"> 200L</option>
-                                <option value="300L"> 300L</option>
-                            </select></li>
-                        <li> <label for="mail"> E-mail : <input type="text" name="name"></label></li>
-                        <li> <label for="company"> Entreprise : <input type="text" name="company"></label></li>
-                        <li> <label for="kbis"> N° Kbis : <input type="text" name="kbis"></label></li>
-                        <li> <label for="immat">N° immatriculation du véhicule : <input type="text" name="immatriculation"></label></li>
-                        <li> <label for="phonenumber">N° de téléphone : <input type="text" name="phone"></label></li>
-                        <br> 
-                        <label for="submit"><input type="submit"></label> 
-                        <label for="reset"><input type="reset" value="Annuler"></label> 
-                    </ul>
-                </div>
-            </form>
+            <div class="form-style">
+                <div class="form-style-heading">Formulaire de contact </div>
+                <form action="" method="post">
+                <label for="field1"> <span>Nom <span class="required"> * </span></span><input type="text" class="input-field" name="field1" value="" /></label>
+                <label for="field2"> <span>Email <span class="required"> * </span></span><input type="text" class="input-field" name="field2" value="" /></label>
+                <label> <span>Telephone </span> <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="10"></label>
+                <label for="field4"> <span>Sujet du message</span> <select name="field4" class="select-field">
+                    <option value="General Question">Contrat de Livraison</option>
+                    <option value="Advertise">Devenir Partenaire</option>
+                    <option value="Partnership">Renseignements</option>
+                </select></label>
+                <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+                
+                <label><span> </span><input type="submit" value="Envoyer"/></label>
+                </form>
+                
+            </div>
         </section>
-
-
-        <!-- <script>
-            const burgerContainer = document.querySelector('.burger-container');
-            const navLinks = document.querySelector('.nav-links');
-    
-            burgerContainer.addEventListener('click', () => {
-                burgerContainer.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            })
-        </script>
- -->
-
 
         <footer id="footer">
             <i class="legal">&copy; 2020 - SARL T.P.S.</i>
-            <i class="legal">Transport Presse Services, <wbr> SARL au capital social de 7625€ et aux chiffres d'affaires de 750000€ en 2019, <wbr> siège social basé au 183 AV ACHILLE PERETTI <wbr> 92200 NEUILLY-SUR-SEINE </i>
+            <i class="legal">Transport Presse Services, SARL au capital social de 7625€ et aux chiffres d'affaires de 750000€ en 2019, siège social basé au <wbr> 183 AV ACHILLE PERETTI <wbr> 92200 NEUILLY-SUR-SEINE </i>
             <a class="legal" href="#">Scroll <i class="fas fa-angle-up"></i></a>
         </footer>
+        <script type="text/javascript" src="/javascriptcode.js"></script>
     </body>
 </html>
