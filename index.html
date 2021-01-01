@@ -13,11 +13,11 @@
 
     <body>
 
-        <section id="home" class="home-container">
-            <header id="header" class="header">
+        <section id="home">
+            <header id="header">
                 <a class="logo" href="#"><img src="/images/Logo_TPS.svg" alt="logo" height="200px" width="200px"></a>
                     <ul class="nav-links">
-                        <li><a class="highlight" href="#"><span>Accueil</span></a></li>
+                        <li><a class="highlight" href="#header"><span>Accueil</span></a></li>
                         <li><a class="highlight" href="#partenaires"><span>Nos partenaires</span></a></li>
                         <li><a class="highlight" href="#fret"><span>Affretement</span></a></li>
                         <li><a class="highlight" href="#team"><span>Nos Equipes</span></a></li>
@@ -62,9 +62,9 @@
         </section>
 
 
-        <section class="video">
-            <iframe width="850" height="500" src="https://www.youtube.com/embed/DoOWK7ik4cY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DoOWK7ik4cY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         <section class="question" id= "question">
             <h2 class="section-title">Questions récurrentes</h2>
@@ -144,26 +144,49 @@
             <div class="form-style">
                 <div class="form-style-heading">Formulaire de contact </div>
                 <form action="" method="post">
-                <label for="field1"> <span>Nom <span class="required"> * </span></span><input type="text" class="input-field" name="field1" value="" /></label>
-                <label for="field2"> <span>Email <span class="required"> * </span></span><input type="text" class="input-field" name="field2" value="" /></label>
-                <label> <span>Telephone </span> <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="10"></label>
-                <label for="field4"> <span>Sujet du message</span> <select name="field4" class="select-field">
-                    <option value="General Question">Contrat de Livraison</option>
-                    <option value="Advertise">Devenir Partenaire</option>
-                    <option value="Partnership">Renseignements</option>
-                </select></label>
-                <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
-                
-                <label><span> </span><input type="submit" value="Envoyer"/></label>
+                    <label for="field1">
+                        <span>Nom <span class="required"> * </span>
+                        </span>
+                        <input type="text" class="input-field" name="field1" value="" />
+                    </label>
+                    <label for="field2">
+                        <span>Email <span class="required"> * </span>
+                        </span>
+                        <input type="email" class="input-field" name="field2" value="" />
+                    </label>
+                    <label for="field3">
+                        <span>Telephone <span class="required"> * </span>
+                        </span>
+                        <input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="10">
+                    </label>
+                    <label for="field4">
+                        <span>Sujet du message</span>
+                        <select name="field4" class="select-field">
+                            <option value="General Question">Contrat de Livraison</option>
+                            <option value="Advertise">Devenir Partenaire</option>
+                            <option value="Partnership">Renseignements</option>
+                        </select>
+                    </label>
+                    <label for="field5">
+                        <span>Message <span class="required">*</span>
+                        </span>
+                        <textarea name="field5" class="textarea-field"></textarea>
+                    </label>
+                    
+                    <label>
+                        <span> </span>
+                        <input type="submit" value="Envoyer"/>
+                    </label>
                 </form>
-                
             </div>
         </section>
 
         <footer id="footer">
             <i class="legal">&copy; 2020 - SARL T.P.S.</i>
             <i class="legal">Transport Presse Services, SARL au capital social de 7625€ et aux chiffres d'affaires de 750000€ en 2019, siège social basé au <wbr> 183 AV ACHILLE PERETTI <wbr> 92200 NEUILLY-SUR-SEINE </i>
-            <a class="legal" href="#">Scroll <i class="fas fa-angle-up"></i></a>
+            <div class="scrollbutton">
+                <a class="legal" href="#">Scroll <i class="fas fa-angle-up"></i></a
+            ></div>
         </footer>
         <script type="text/javascript" src="/javascriptcode.js"></script>
     </body>
