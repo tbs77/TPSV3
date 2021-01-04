@@ -167,6 +167,8 @@ li {
     max-height: 150px;
     height: auto;
     width: auto;
+    border: 3px solid black;
+    margin: 15px;
 }
 
 /* Stylisation des grilles (grid) */
@@ -176,7 +178,7 @@ li {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 100px;
+    padding: 30px;
 }
 
 /* Formulaire stylé */
